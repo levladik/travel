@@ -46,17 +46,19 @@ function display() {
 		}
 	}
 	slides[num].classList.add("active");
-}
 
-if (button[0].classList.contains("popular__slide active")) {
+	if (button[0].classList.contains("active")) {
 		position.style.justifyContent = "start";
 	}
-	else if (button[1].classList.contains("popular__slide active")) {
+	else if (button[1].classList.contains("active")) {
 		position.style.justifyContent = "center";
 	}
 	else {
 		position.style.justifyContent = "end";
 }
+}
+
+
 
 
 

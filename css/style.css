@@ -453,15 +453,6 @@ input[type="text"] {
 	justify-content: space-between;
 	align-items: center;
 }
----
-/* .footer__wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	max-width: 54%;
-	margin-left: 39%;
-} */
 .footer__text {
 	font-family: 'Red Hat Text';
 	font-style: normal;

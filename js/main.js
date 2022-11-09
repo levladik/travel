@@ -25,38 +25,32 @@
 
 //Slider
 
-let slides = document.querySelectorAll(".popular__slide");
-let button = document.querySelectorAll(".slideshow-button");
-let position = document.querySelector(".popular__slideshow-container");
+const swiper = new Swiper('.swiper', {
+	loop: true,
 
-button.forEach(x => {
-	x.onclick = display;
+	autoplay: {
+		delay: 3000,
+		stopOnLastSlide: false,
+		disableOnIteraction: false,
+	},
+	
+  pagination: {
+	  el: '.swiper-pagination',
+	  clickable: true,
+	},
+  
+	slidesPerView: 1,
+	centeredSlides: true,
+	spaceBetween: 10,
+
+	breakpoints: {
+    960: {
+      slidesPerView: 2
+    },
+  }
 });
 
-function display() {
-	let num;
-	for (let i = 0; i < button.length; i++) {
-		button[i].classList.remove("active");
-		slides[i].classList.remove("active");
-	}
-	this.classList.add("active");
-	for (let i = 0; i < button.length; i++) {
-		if (button[i].classList.contains("active")) {
-			num = i;
-		}
-	}
-	slides[num].classList.add("active");
 
-	if (button[0].classList.contains("active")) {
-		position.style.justifyContent = "start";
-	}
-	else if (button[1].classList.contains("active")) {
-		position.style.justifyContent = "center";
-	}
-	else {
-		position.style.justifyContent = "end";
-}
-}
 
 
 

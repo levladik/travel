@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="icon" href="./assets/img/Logo.png" />
-    <script src="index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <title>Travel</title>
   </head>
   <body>
@@ -32,16 +35,24 @@
               <span class="header__nav-close-line"></span>
             </li>
             <li class="header__nav-item">
-              <a href="!#" class="header__nav-link">How It Works</a>
+              <a href="#" onclick="return false;" class="header__nav-link"
+                >How It Works</a
+              >
             </li>
             <li class="header__nav-item">
-              <a href="!#" class="header__nav-link">Plan Your Trip</a>
+              <a href="#" onclick="return false;" class="header__nav-link"
+                >Plan Your Trip</a
+              >
             </li>
             <li class="header__nav-item">
-              <a href="!#" class="header__nav-link">Destinations</a>
+              <a href="#" onclick="return false;" class="header__nav-link"
+                >Destinations</a
+              >
             </li>
             <li class="header__nav-item">
-              <a href="!#" class="header__nav-link">Travel Stories</a>
+              <a href="#" onclick="return false;" class="header__nav-link"
+                >Travel Stories</a
+              >
             </li>
           </ul>
         </nav>
@@ -65,7 +76,7 @@
             activities and more
           </p>
 
-          <form action="!#" method="get" class="explore__form">
+          <form action="#" method="get" class="explore__form">
             <fieldset class="search__form-wrap">
               <div class="search__form-box">
                 <input
@@ -127,39 +138,60 @@
         <div class="popular__wrapper">
           <h2 class="popular__title section__title">POPULAR DESTINATIONS</h2>
 
-          <div class="popular__slideshow-container">
-            <div class="popular__slide active">
-              <div class="popular__slide-text">England</div>
-              <img
-                src="./assets/img/England.png"
-                alt="England"
-                class="popular__slide-pic"
-              />
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="./assets/img/England.png"
+                  alt="England"
+                  class="popular__slide-pic"
+                />
+                <div class="popular__slide-text">England</div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/img/Japan.png"
+                  alt="Japan"
+                  class="popular__slide-pic"
+                />
+                <div class="popular__slide-text">Japan</div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/img/USA.png"
+                  alt="USA"
+                  class="popular__slide-pic"
+                />
+                <div class="popular__slide-text">USA</div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/img/France.png"
+                  alt="Japan"
+                  class="popular__slide-pic"
+                />
+                <div class="popular__slide-text">France</div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/img/Tailand.png"
+                  alt="Japan"
+                  class="popular__slide-pic"
+                />
+                <div class="popular__slide-text">Tailand</div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/img/Australia.png"
+                  alt="Japan"
+                  class="popular__slide-pic"
+                />
+                <div class="popular__slide-text">Australia</div>
+              </div>
             </div>
 
-            <div class="popular__slide">
-              <div class="popular__slide-text">Japan</div>
-              <img
-                src="./assets/img/Japan.png"
-                alt="Japan"
-                class="popular__slide-pic"
-              />
-            </div>
 
-            <div class="popular__slide">
-              <div class="popular__slide-text">USA</div>
-              <img
-                src="./assets/img/USA.png"
-                alt="USA"
-                class="popular__slide-pic"
-              />
-            </div>
-          </div>
-
-          <div class="popular__slideshow-buttons">
-            <span class="slideshow-button active"></span>
-            <span class="slideshow-button"></span>
-            <span class="slideshow-button"></span>
+            <div class="swiper-pagination"></div>
           </div>
 
           <button class="popular__find-button button"><p>Find More</p></button>
@@ -171,112 +203,123 @@
 
         <div class="storie-bg">
           <div class="storie-bg-2">
-          	<div class="stories__wrapper wrapper">
-	            <div class="stories__content-wrap">
-	              <div class="storie">
-	                <div class="storie-pic">
-	                  <img src="./assets/img/Boat.png" alt="Thailand" />
-	                </div>
-	                <div class="storie__desc">
-	                  <h3 class="storie__title">
-	                    10 Photos of Attractive Thailand
-	                  </h3>
-	                  <p class="storie__text">
-	                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-	                    do eiusmod tempor incididunt ut labore et dolore magna
-	                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-	                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-	                    Duis aute irure dolor in reprehenderit in voluptate velit
-	                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-	                    occaecat cupidatat non proident, sunt in culpa qui officia
-	                    deserunt mollit anim id est laborum.Lorem ipsum dolor sit
-	                    amet, consectetur adipiscing elit... <span>Read More</span>
-	                  </p>
-	                </div>
-	              </div>
-	
-	              <div class="storie">
-	                <div class="storie-pic">
-	                  <img src="./assets/img/Road.png" alt="Utah" />
-	                </div>
-	                <div class="storie__desc">
-	                  <h3 class="storie__title">Canyonlands National Park, Utah</h3>
-	                  <p class="storie__text">
-	                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-	                    do eiusmod tempor incididunt ut labore et dolore magna
-	                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-	                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-	                    Duis aute irure dolor in reprehenderit in voluptate velit
-	                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-	                    occaecat cupidatat non proident, sunt in culpa qui officia
-	                    deserunt mollit anim id est laborum.Lorem ipsum dolor sit
-	                    amet, consectetur adipiscing elit... <span>Read More</span>
-	                  </p>
-	                </div>
-	              </div>
-	
-	              <div class="storie">
-	                <div class="storie-pic">
-	                  <img src="./assets/img/Snow_mountains.png" alt="Mountains" />
-	                </div>
-	                <div class="storie__desc">
-	                  <h3 class="storie__title">
-	                    I left my heart in the Mountains!
-	                  </h3>
-	                  <p class="storie__text">
-	                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-	                    do eiusmod tempor incididunt ut labore et dolore magna
-	                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-	                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-	                    Duis aute irure dolor in reprehenderit in voluptate velit
-	                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-	                    occaecat cupidatat non proident, sunt in culpa qui officia
-	                    deserunt mollit anim id est laborum.Lorem ipsum dolor sit
-	                    amet, consectetur adipiscing elit... <span>Read More</span>
-	                  </p>
-	                </div>
-	              </div>
-	
-	              <div class="storie">
-	                <div class="storie-pic">
-	                  <img src="./assets/img/Yellow_car.png" alt="Journey" />
-	                </div>
-	                <div class="storie__desc">
-	                  <h3 class="storie__title">The Longest journey in my life!</h3>
-	                  <p class="storie__text">
-	                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-	                    do eiusmod tempor incididunt ut labore et dolore magna
-	                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-	                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-	                    Duis aute irure dolor in reprehenderit in voluptate velit
-	                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-	                    occaecat cupidatat non proident, sunt in culpa qui officia
-	                    deserunt mollit anim id est laborum.Lorem ipsum dolor sit
-	                    amet, consectetur adipiscing elit... <span>Read More</span>
-	                  </p>
-	                </div>
-	              </div>
-	            </div>
-	
-	            <button class="storie__see-more button"><p>See More</p></button>
-	          </div>
+            <div class="stories__wrapper wrapper">
+              <div class="stories__content-wrap">
+                <div class="storie">
+                  <div class="storie-pic">
+                    <img src="./assets/img/Boat.png" alt="Thailand" />
+                  </div>
+                  <div class="storie__desc">
+                    <h3 class="storie__title">
+                      10 Photos of Attractive Thailand
+                    </h3>
+                    <p class="storie__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.Lorem ipsum
+                      dolor sit amet, consectetur adipiscing elit...
+                      <span>Read More</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="storie">
+                  <div class="storie-pic">
+                    <img src="./assets/img/Road.png" alt="Utah" />
+                  </div>
+                  <div class="storie__desc">
+                    <h3 class="storie__title">
+                      Canyonlands National Park, Utah
+                    </h3>
+                    <p class="storie__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.Lorem ipsum
+                      dolor sit amet, consectetur adipiscing elit...
+                      <span>Read More</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="storie">
+                  <div class="storie-pic">
+                    <img
+                      src="./assets/img/Snow_mountains.png"
+                      alt="Mountains"
+                    />
+                  </div>
+                  <div class="storie__desc">
+                    <h3 class="storie__title">
+                      I left my heart in the Mountains!
+                    </h3>
+                    <p class="storie__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.Lorem ipsum
+                      dolor sit amet, consectetur adipiscing elit...
+                      <span>Read More</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="storie">
+                  <div class="storie-pic">
+                    <img src="./assets/img/Yellow_car.png" alt="Journey" />
+                  </div>
+                  <div class="storie__desc">
+                    <h3 class="storie__title">
+                      The Longest journey in my life!
+                    </h3>
+                    <p class="storie__text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum.Lorem ipsum
+                      dolor sit amet, consectetur adipiscing elit...
+                      <span>Read More</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <button class="storie__see-more button"><p>See More</p></button>
+            </div>
           </div>
           <footer class="footer">
             <div class="footer__wrapper wrapper">
               <p class="footer__text">All Rights Reserved © Travel Portal</p>
 
               <div class="footer__media">
-                <a href="" class="footer__media-link"
+                <a href="#" onclick="return false;" class="footer__media-link"
                   ><img
                     src="./assets/img/akar-icons_instagram-fill.png"
                     alt="instagram"
                     class="footer__media-logo" /></a
-                ><a href="" class="footer__media-link"
+                ><a href="#" onclick="return false;" class="footer__media-link"
                   ><img
                     src="./assets/img/akar-icons_video.png"
                     alt="youtube"
                     class="footer__media-logo" /></a
-                ><a href="" class="footer__media-link"
+                ><a href="#" onclick="return false;" class="footer__media-link"
                   ><img
                     src="./assets/img/akar-icons_twitter-fill.png"
                     alt="twitter"
@@ -288,6 +331,7 @@
         </div>
       </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
-  <script src="../js/main.js"></script>
 </html>
